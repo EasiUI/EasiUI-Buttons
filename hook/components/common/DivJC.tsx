@@ -1,0 +1,15 @@
+
+
+import React from 'react'
+import { cn } from '../../../lib/twMerge'
+interface Props{
+    children:React.ReactNode
+    className?:string
+}
+export default function DivJC({children,className}:Props) {
+  return (
+    <div className={cn(`flex items-center justify-center p-2 gap-2 rounded-sm `,className)}>
+      {children}
+    </div>
+  )
+}
